@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('list/', jobList::class, 'index')->name('list.index');
 Route::get('list/{id}', jobList::class, 'show')->name('list.show');
 Route::get('list/create', jobList::class, 'create')->name('list.create');
-Route::get('list/{id}/edit', job::class, 'edit')->name('list.edit');
+Route::get('list/{id}/edit', jobList::class, 'edit')->name('list.edit');
+Route::get('list/{id}/delete', jobList::class, 'delete')->name('list.delete');
 
