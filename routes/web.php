@@ -14,9 +14,9 @@ use App\Http\Controllers\jobListController;
 |
 */
 
-Route::get('/', jobListController::class, 'index')->name('list.index');
-Route::get('list/{id}', jobListController::class, 'show')->name('list.show');
-Route::get('list/create', jobListController::class, 'create')->name('list.create');
-Route::get('list/{id}/edit', jobListController::class, 'edit')->name('list.edit');
-Route::get('list/{id}/delete', jobListController::class, 'delete')->name('list.delete');
+Route::get('/', [jobListController::class, 'index'])->name('list.index');
+Route::get('list/{id}', [jobListController::class, 'show'])->name('list.show');
+Route::get('list/create', [jobListController::class, 'create'])->name('list.create');
+Route::get('list/{id}/edit', [jobListController::class, 'edit'])->name('list.edit');
+Route::get('list/{id}/delete', [jobListController::class, 'delete'])->name('list.delete');
 
