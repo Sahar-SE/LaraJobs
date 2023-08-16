@@ -7,7 +7,8 @@
 </head>
 <body>
   @foreach($list as $list)
-    <h1>{{list->job_title}}</h1>
+    <h1>{{$list->job_title}}</h1>
+    <p>{{$list->company}}</p>
   @endforeach
     
 </body>
