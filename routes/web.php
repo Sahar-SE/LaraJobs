@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\jobListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('list/', jobListController::class, 'index')->name('list.index');
+Route::get('/', jobListController::class, 'index')->name('list.index');
 Route::get('list/{id}', jobListController::class, 'show')->name('list.show');
 Route::get('list/create', jobListController::class, 'create')->name('list.create');
 Route::get('list/{id}/edit', jobListController::class, 'edit')->name('list.edit');
