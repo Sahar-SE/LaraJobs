@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class jobListController extends Controller
 {
   public function index(){
-    return view('list.index');
+    $list = JobList::all();
+    return view('list.index', ['list' => $list]);
   }
 
   public function show($id){
