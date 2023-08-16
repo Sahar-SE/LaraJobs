@@ -10,7 +10,11 @@ class jobList extends Controller
     
   }
 
-  public function show(){
+  public function show($id){
+
+  }
+
+  public function create(){
 
   }
 }
