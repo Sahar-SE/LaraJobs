@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\JobList;
 
 class jobListController extends Controller
 {
   public function index(){
-    return view('list.index');
+    $list = JobList::all();
+    return view('list.index', ['list' => $list]);
   }
 
   public function show($id){

@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-  <h1>Index Page</h1>
+  @foreach($list as $list)
+    <h1>{{$list->job_title}}</h1>
+    <p>{{$list->company}}</p>
+  @endforeach
     
 </body>
 </html>
