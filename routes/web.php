@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('list/', jobList::class, 'index')->name('list.index');
+Route::get('list/{id}', jobList::class, 'show')->name('list.show');
+
