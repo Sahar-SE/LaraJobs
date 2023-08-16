@@ -17,4 +17,8 @@ class jobList extends Controller
   public function create(){
 
   }
+
+  public function edit($id){
+    
+  }
 }
