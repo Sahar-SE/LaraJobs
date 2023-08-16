@@ -19,6 +19,10 @@ class jobList extends Controller
   }
 
   public function edit($id){
+
+  }
+
+  public function delete($id){
     
   }
 }
