@@ -18,6 +18,7 @@ class CreateJobListsTable extends Migration
             $table->string('job_title');
             $table->string('tags');
             $table->string('company');
+            $table->string('location');
             $table->timestamps();
         });
     }
