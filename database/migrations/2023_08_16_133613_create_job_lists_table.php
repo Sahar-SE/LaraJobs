@@ -22,6 +22,7 @@ class CreateJobListsTable extends Migration
             $table->string('email');
             $table->string('website');
             $table->string('image');
+            $table->integer('salary');
             $table->longText('description');
             $table->timestamps();
         });
