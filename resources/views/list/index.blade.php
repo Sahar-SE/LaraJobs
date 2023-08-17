@@ -11,6 +11,5 @@
     <p>{{$list->company}}</p>
     <p>{{$list->tags}}</p>
   @endforeach
-    
 </body>
 </html>
