@@ -13,6 +13,8 @@ class jobListController extends Controller
   }
 
   public function show($id){
+    $list = JobList::find($id);
+    return view('list.show', ['list' => $list]);
 
   }
 
