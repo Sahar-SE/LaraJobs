@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-  <form action="" method="POST">
+  <form action="/list/store" method="POST">
     <input type="text">
   </form>
     
