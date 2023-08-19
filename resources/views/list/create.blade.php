@@ -7,7 +7,9 @@
 </head>
 <body>
   <form action="/list/store" method="POST">
+    @csrf
     <input type="text">
+    <button type="submit">sub</button>
   </form>
     
 </body>
