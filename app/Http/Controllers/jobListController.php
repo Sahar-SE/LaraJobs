@@ -19,11 +19,11 @@ class jobListController extends Controller
   }
 
   public function create(){
-
+    return view('list.create');
   }
 
   public function store(Request $request){
-
+    dd($request->all());
   }
 
   public function edit($id){

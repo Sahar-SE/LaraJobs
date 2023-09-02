@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-  @foreach($list as $list)
-  <h1>{{$list->job_title}}</h1>
-  <p>{{$list->company}}</p>
-  <p>{{$list->tags}}</p>
-  <p>{{$list->sallary}}</p>
-  <p>{{$list->location}}</p>
-  <p>{{$list->email}}</p>
-  <p>{{$list->website}}</p>
-  <p>{{$list->description}}</p>
-  @endforeach
+  
+    <h1>{{$list->job_title}}</h1>
+    <p>{{$list->company}}</p>
+    <p>{{$list->tags}}</p>
+    <p>{{$list->sallary}}</p>
+    <p>{{$list->location}}</p>
+    <p>{{$list->email}}</p>
+    <p>{{$list->website}}</p>
+    <p>{{$list->description}}</p>
+ 
 </body>
 </html>
