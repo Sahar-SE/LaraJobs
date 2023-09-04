@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    This is Search
+    <p>This is Search</p>
 </body>
 </html>
