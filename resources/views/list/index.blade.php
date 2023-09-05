@@ -5,5 +5,6 @@
 @include('partials._search')
   @foreach($list as $list)
     <x-list-card :list="$list"/>
+    <x-list-tags :tagsCsv="$list->tags"/>
   @endforeach
 @endsection
