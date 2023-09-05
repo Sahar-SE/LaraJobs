@@ -1,11 +1,11 @@
 @props(['tagsCsv'])
 
 @php
-  $tags = exploade(',', $tagsCsv);
+  $tags = explode(',', $tagsCsv);
 @endphp
 
 @foreach($tags as $tag)
   <li class="">
-    <a href="/?tag={{$tag}}">{{@tag}}</a>
+    <a href="/?tag={{$tag}}">{{$tag}}</a>
   </li>
 @endforeach
